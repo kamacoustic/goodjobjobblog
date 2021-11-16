@@ -1,0 +1,4 @@
+{
+    "uri": "mongodb+srv://Kam:kam123@cluster0.ppsbt.mongodb.net/good_job_job_blog?retryWrites=true&w=majority",
+    "jwtSecret" : "sl_myJwtSecret"
+}
