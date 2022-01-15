@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const config = require('config')
 
 const jobs = require('./routes/api/jobs')
+const users = require('./routes/api/users')
+const auth = require('./routes/api/auth')
 
 
 const app = express()
@@ -29,8 +31,8 @@ const port = process.env.PORT || 5000
 
 // use Routes
 app.use('/api/jobs', jobs)
-app.use('/api/users', require('./routes/api/users'))
-app.use("/api/auth", require('./routes/api/auth'))
+app.use('/api/users', users)
+app.use("/api/auth", auth)
 
 
 app.listen(port, () => console.log(`Server started on ${port}`))
